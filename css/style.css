@@ -1,0 +1,140 @@
+
+body{
+  margin-top: 150px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+main {
+  width: 90vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  width: 100vw;
+  height: 14vh;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px rgba(128, 128, 128, 0.253) solid;
+  margin-bottom: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 2;
+}
+.logo-img {
+  width: auto;
+  height: 15vh;
+  margin-left: 220px;
+}
+.logo-img > a >img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.nav-area {
+  width: 180px;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-right: 200px;
+  text-align: right;
+}
+.nav-area1 {
+  width: 350px;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-right: 200px;
+  text-align: right;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.1rem;
+  margin-right: 15px;
+  margin-top: 5px;
+  text-align: right;
+}
+.nav-list > a >li {
+  margin-left: 15px;
+  color: rgb(32, 32, 32);
+}
+.nav-list > a > li >img{
+  margin-right: 5px;
+}
+.nav-list > li >img{
+  margin-right: 5px;
+}
+.nav-list > li:hover{
+  cursor: pointer;
+}
+.search_box {
+  border: 1px rgba(128, 128, 128, 0.253) solid;
+  height: 30px;
+  border-radius: 3%;
+}
+input[name="header_search"] {
+  border: none;
+}
+
+/* footer */
+footer{
+  width: 100vw;
+  height: 7vh;
+  text-align: center;
+  border-top: 1px rgba(128, 128, 128, 0.253) solid;
+  margin-top: 110px;
+  background-color: white;
+}
+.footer{
+  width: 100%;
+  height: 7vh;
+  padding-top: 16px;
+  background-color: rgba(196, 194, 194, 0.2);
+  font-size: 10px;
+  padding-left: 60px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 600px) {
+  /* 600px以下に適用されるCSS（スマホ用） */
+  /* ヘッダーの設定 */
+  .search_box {
+    display: none;
+  }
+  .nav-area {
+    margin-right: 5px;
+  }
+  .logo-img {
+    margin-left: 0px;
+    margin-top: 5px;
+    height: 10vh;
+  }
+  .logo-img > img {
+    height: 80%;
+    width: 80%;
+    margin-left: 5%;
+  }
+  header {
+    margin: 0 auto 20px;
+    width: 100vw;
+    height: 10vh;
+  }
+  .nav-list {
+    margin-right: 0px;
+  }
+  .nav-list > li {
+    font-size: 0.85rem;
+    margin-left: 3px;
+  }
+  .nav-area {
+    width: 240px;
+    justify-content: space-between;
+    margin-right: 0px;
+    margin-top: 18px;
+  }
+}

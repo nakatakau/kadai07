@@ -1,0 +1,75 @@
+/* ログイン画面 */
+main{
+  height: 61vh;
+  width: auto;
+}
+.login_check{
+  width: 40%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 1px rgba(128, 128, 128, 0.253) solid;
+  border-radius: 3%;
+  background-color: rgba(196, 194, 194, 0.2)
+}
+.login_check_title{
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+  margin: 20px 0;
+}
+.login_check_input{
+  display: block;
+  margin: 0 auto 10px;
+  border: 1px rgba(128, 128, 128, 0.253) solid;
+  background-color: white;
+  border-radius: 3%;
+  width: 70%;
+  height: 40px;
+  padding-left: 10px;
+}
+.login_check_input:hover{
+  border: 1px #23abdde5 solid;
+}
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 40px;
+  margin-top: 15px;
+  border-radius: 5%;
+  background-color: #23abdde5;
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+.password{
+  display: block;
+  margin: 0 auto 10px;
+  border: 1px rgba(128, 128, 128, 0.253) solid;
+  background-color: white;
+  border-radius: 3%;
+  width: 70%;
+  height: 40px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.password > img {
+  padding: 5px 5px 5px 0;
+}
+#goto_sianup{
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+#goto_sianup > p{
+  text-align: center;
+}
+#goto_sianup > p:hover{
+  color: #23abdde5;
+  font-weight: bold;
+}

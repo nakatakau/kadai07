@@ -1,0 +1,202 @@
+
+/* サインアップ画面 */
+.login {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#login_form {
+  width: 100%;
+  height: auto;
+  background-color: rgba(196, 194, 194, 0.2);
+  border-radius: 3%;
+  border: 1px rgba(128, 128, 128, 0.253) solid;
+}
+.input_text,
+input[type="email"]{
+  border: 1px rgba(128, 128, 128, 0.253) solid;
+  background-color: white;
+  border-radius: 3%;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+}
+.input_text:hover,
+input[type="email"]:hover,
+.password:hover{
+  border: 1px #23abdde5 solid;
+}
+.password{
+  display: block;
+  margin: 0 auto 10px;
+  border: 1px rgba(128, 128, 128, 0.253) solid;
+  background-color: white;
+  border-radius: 3%;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.password > img {
+  padding: 5px 5px 5px 0;
+}
+table {
+  width: 90%;
+  height: 420px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.left {
+  width: 30%;
+}
+tr {
+  height: 70px;
+  padding-bottom: 15px;
+  border-bottom: 1px rgba(128, 128, 128, 0.253) solid;
+}
+td {
+  padding-top: 12px;
+}
+td > p {
+  padding-top: 10px;
+  padding-left: 40px;
+}
+.gender {
+  display: flex;
+  justify-content: left;
+  margin-top: 10px;
+}
+.block {
+  margin-right: 30px;
+}
+label {
+  white-space: nowrap;
+}
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 5%;
+  background-color: #23abdde5;
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+select {
+  background-color: white;
+  width: 60px;
+  height: 25px;
+  text-align: center;
+  margin-right: 5px;
+  border: 1px rgba(128, 128, 128, 0.253) solid;
+  border-radius: 3%;
+}
+select:hover{
+  border: 1px #23abdde5 solid;
+}
+.birth {
+  padding-top: 20px;
+}
+.check{
+  font-size: 0.7rem;
+  color: red;
+  font-weight: bold;
+}
+/* confirm.php */
+
+.sign-up{
+  width: 90vw;
+  height: 66vh;
+  margin: 0 auto;
+}
+.sign-up > h2,
+.sign-up > p {
+  text-align: center;
+}
+.sign-up > h2{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.sign-up > p{
+  font-size: 18px;
+  font-weight: bold;
+}
+.flex{
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+.logout{
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+#logout_btn{
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 5%;
+  background-color: #509f05e5;
+  text-align: center;
+  color: aliceblue;
+}
+#logout_btn:hover{
+  background-color: #4f9f0583;
+}
+#retire{
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+form[name="retire_form"] > p{
+  margin-left: 15px;
+}
+#retire-btn{
+  background-color: rgb(254, 51, 91);
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 600px) {
+  /* 600px以下に適用されるCSS（スマホ用） */
+  .login {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  table {
+    width: 100%;
+  }
+  .left {
+    width: 30%;
+    font-size: 0.7rem;
+    padding-top: 15px;
+  }
+  input[type="text"],
+  input[type="email"] {
+    width: 95%;
+    font-size: 0.8rem;
+  }
+  select {
+    width: 40px;
+  }
+}
